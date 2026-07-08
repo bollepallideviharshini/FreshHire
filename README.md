@@ -186,6 +186,12 @@ FreshHire is configured with a fully automated Continuous Integration and Contin
 
 ---
 
+## 🤖 AI-Assisted Development
+
+FreshHire was developed with assistance from AI tools, including Antigravity, Claude, Perplexity and ChatGPT, for UI design, documentation, and CI workflow generation. All generated code was reviewed, customized, tested, and integrated manually before deployment.
+
+---
+
 ## ✍️ Author
 
 Created by **Bollepalli Devi Harshini**

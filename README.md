@@ -30,12 +30,12 @@ graph TD
     E[Job Listings Mock DB] -->|Dynamic Local Filters| F[Filtered Job List]
     B -->|Search/Location/Chip Filters| F
     
-    subgraph Local AI Engines
+    subgraph LAE ["Local AI Engines"]
         G[Job Description Input] -->|Summarizer Engine| H[Skills, Salary & Red Flags Output]
         I[Selected Job Card] -->|Cover Letter Generator| J[Tailored Cover Letter & Custom Q&A]
     end
     
-    B -->|Generate| Local AI Engines
+    B -->|Generate| LAE
     B -->|Compare Toggle| K[Side-by-Side Comparison Drawer]
 ```
 

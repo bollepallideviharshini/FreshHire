@@ -179,5 +179,5 @@ Because FreshHire builds into static HTML/JS/CSS assets, it can be hosted for fr
 
 ## ✍️ Author
 
-Created with ❤️ by **Bollepalli Devi Harshini**
+Created by **Bollepalli Devi Harshini**
 - GitHub: [@bollepallideviharshini](https://github.com/bollepallideviharshini)

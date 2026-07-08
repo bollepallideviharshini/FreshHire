@@ -38,10 +38,10 @@ Captures the user's attention, presents the value proposition, and establishes c
 ## Features
 *   **Heading & Tagline**: *"Land Your First Tech Role, Backed by AI"* highlights the fresher-first nature of the platform.
 *   **Dynamic Backgrounds**: Uses gradients (such as `from-teal-500/10 to-indigo-500/10`) and glow spots to create a modern web design.
-*   **Stats Cards**: Displays mock telemetry like:
-    *   *12,480+ Active Jobs*
-    *   *4,250+ Partner Companies*
-    *   *94% Placement Success Rate*
+*   **Quick Stats Card**: Renders real-time candidate statistics directly in the header layout:
+    *   *Saved Roles count* (tracks count of user bookmarks)
+    *   *Pending Applications count* (mock value of 2 pending)
+    *   *Interview Invites count* (mock value of 1 scheduled)
 
 ---
 
@@ -91,7 +91,7 @@ Provides a detailed overview of individual job postings, allowing users to bookm
 *   **Interaction Controls**:
     *   *Save Toggle* (Bookmark icon)
     *   *Compare Checkbox*
-    *   *Quick View / Action buttons* (Apply, AI Cover Letter, AI Summarize)
+    *   *Details Link* (triggers detailed job description routing/alerts)
 
 ---
 

@@ -158,6 +158,10 @@ Follow these instructions to run the project on your local machine:
 
 ## 🌐 Deployment
 
+### 🔗 Live Demo
+The application is live and accessible at:
+👉 **[fresh-hire-steel.vercel.app](https://fresh-hire-steel.vercel.app/)**
+
 ### Building for Production
 To generate a production-ready static bundle of the project, run:
 ```bash

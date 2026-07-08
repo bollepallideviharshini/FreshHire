@@ -177,6 +177,15 @@ Because FreshHire builds into static HTML/JS/CSS assets, it can be hosted for fr
 
 ---
 
+## 🔁 CI/CD Pipeline
+
+FreshHire is configured with a fully automated Continuous Integration and Continuous Deployment (CI/CD) workflow:
+
+- **Continuous Integration (GitHub Actions)**: We utilize GitHub Actions for linting, type-checking, and build validation. Every push or pull request to the `main` branch triggers the [CI Build Workflow](.github/workflows/ci.yml) on an Ubuntu runner, ensuring that any compilation errors or broken code fail the build immediately.
+- **Continuous Deployment (Vercel)**: The GitHub repository is connected to Vercel, which monitors successful updates on the `main` branch and automatically triggers a new deployment to the live environment.
+
+---
+
 ## ✍️ Author
 
 Created by **Bollepalli Devi Harshini**

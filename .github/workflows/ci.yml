@@ -1,0 +1,38 @@
+name: CI/CD Build Pipeline
+
+# Trigger the workflow on pushes or pull requests to the main branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build React Application
+    # Use the latest Ubuntu runner
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code so the workflow can access it
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Node.js environment using the LTS version
+      - name: Set up Node.js (LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm' # Caches npm packages to speed up consecutive builds
+
+      # Step 3: Install project dependencies using 'npm ci'
+      # 'npm ci' ensures clean, consistent, and reproducible installs from package-lock.json
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Build the application for production
+      # This runs 'tsc -b && vite build' as defined in package.json and will fail if there are TS compilation or bundling errors
+      - name: Build application
+        run: npm run build
